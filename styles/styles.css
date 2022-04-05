@@ -1,0 +1,187 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+p,
+h4,
+a,
+h1 {
+  margin: 0;
+}
+
+a {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--bright-blue);
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2em auto;
+  text-align: center;
+  align-items: center;
+  width: min-content;
+  border-radius: 15px;
+  box-shadow: 0 1.5em 1.5em hsl(225, 100%, 90%);
+}
+
+.card-image {
+  border-radius: 15px 15px 0 0;
+}
+
+.lower-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 75%;
+  margin: 2.5em 0;
+}
+
+.summary-heading {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.summary-text {
+  color: var(--desaturated-blue);
+}
+
+.option {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+.left-cluster {
+  display: flex;
+  line-height: 1.5em;
+  gap: 1.5em;
+  align-items: flex-start;
+}
+
+.option-heading {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.option-pricing {
+  color: var(--desaturated-blue);
+}
+
+.buttons {
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  font-weight: bold;
+}
+
+.primary-button {
+  width: 100%;
+  background-color: var(--bright-blue);
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  outline: none;
+  border: none;
+  border-radius: 12.5px;
+  font-size: 0.85em;
+  font-weight: 900;
+  box-shadow: 0 1em 1.5em hsl(225, 100%, 90%);
+}
+
+.primary-button:hover,
+.primary-button:active {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.secondary-button {
+  color: var(--desaturated-blue);
+  font-size: 0.85em;
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.secondary-button:hover,
+.secondary-button:active {
+  color: var(--dark-blue);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+
+  .summary-card {
+    width: 90%;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .lower-part {
+    max-width: 80%;
+    gap: 1.25em;
+  }
+
+  .option {
+    padding: 1em;
+  }
+
+  .left-cluster {
+    gap: 1em;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 1em;
+  }
+
+  .primary-button h4 {
+    font-weight: 700;
+  }
+
+  .secondary-button h4 {
+    font-weight: 900;
+  }
+}
