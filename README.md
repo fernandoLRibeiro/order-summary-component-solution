@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: Coming soon
-- Live Site URL: Coming soon
+- Live Site URL: [https://fernandolribeiro.github.io/order-summary-component-solution/](https://fernandolribeiro.github.io/order-summary-component-solution/)
 
 ## My process
 
