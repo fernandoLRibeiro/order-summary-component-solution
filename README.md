@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Coming soon
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-solution-SkfC5-5m5](https://www.frontendmentor.io/solutions/order-summary-component-solution-SkfC5-5m5)
 - Live Site URL: [https://fernandolribeiro.github.io/order-summary-component-solution/](https://fernandolribeiro.github.io/order-summary-component-solution/)
 
 ## My process
